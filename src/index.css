@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-body: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, sans-serif;
+    --font-display: 'Playfair Display', 'Tiro Devanagari Hindi', Georgia, serif;
+    --font-heading: 'Outfit', 'Noto Sans Devanagari', sans-serif;
+    --font-regal: 'Cinzel', 'Tiro Devanagari Hindi', serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-display);
+  }
+}
+
+/* Font Preset Styles */
+.font-preset-classic h1,
+.font-preset-classic h2,
+.font-preset-classic h3,
+.font-preset-classic .font-serif {
+  font-family: 'Playfair Display', 'Tiro Devanagari Hindi', serif !important;
+}
+
+.font-preset-modern h1,
+.font-preset-modern h2,
+.font-preset-modern h3,
+.font-preset-modern .font-serif {
+  font-family: 'Outfit', 'Noto Sans Devanagari', sans-serif !important;
+  letter-spacing: -0.02em;
+}
+
+.font-preset-regal h1,
+.font-preset-regal h2,
+.font-preset-regal h3,
+.font-preset-regal .font-serif {
+  font-family: 'Cinzel', 'Tiro Devanagari Hindi', serif !important;
+  letter-spacing: 0.02em;
+}
+
+/* Theme Presets */
+
+/* Theme 1: Obsidian Gold (Dark Luxury) - Default */
+.theme-obsidian {
+  --bg-primary: #020617;
+  --bg-secondary: #0f172a;
+  --accent-gold: #f59e0b;
+}
+
+/* Theme 2: Royal Ivory Cream (Light Luxury) */
+.theme-royal-cream {
+  background-color: #fdfbf7 !important;
+  color: #0f172a !important;
+}
+
+.theme-royal-cream .bg-slate-950 {
+  background-color: #fdfbf7 !important;
+  color: #0f172a !important;
+}
+
+.theme-royal-cream .bg-slate-900 {
+  background-color: #f8f4eb !important;
+  color: #0f172a !important;
+  border-color: #e2d9c8 !important;
+}
+
+.theme-royal-cream .bg-slate-800,
+.theme-royal-cream .bg-slate-800\/80,
+.theme-royal-cream .bg-slate-800\/60 {
+  background-color: #efe8da !important;
+  color: #1e293b !important;
+  border-color: #e2d9c8 !important;
+}
+
+.theme-royal-cream .text-white {
+  color: #0f172a !important;
+}
+
+.theme-royal-cream .text-slate-200,
+.theme-royal-cream .text-slate-300 {
+  color: #334155 !important;
+}
+
+.theme-royal-cream .text-slate-400 {
+  color: #64748b !important;
+}
+
+.theme-royal-cream .border-slate-800,
+.theme-royal-cream .border-slate-800\/80 {
+  border-color: #e2d9c8 !important;
+}
+
+/* Theme 3: Midnight Sapphire & Electric Gold */
+.theme-sapphire {
+  background-color: #030a1c !important;
+}
+
+.theme-sapphire .bg-slate-950 {
+  background-color: #030a1c !important;
+}
+
+.theme-sapphire .bg-slate-900 {
+  background-color: #0a1633 !important;
+  border-color: #1e295d !important;
+}
+
+.theme-sapphire .bg-slate-800,
+.theme-sapphire .bg-slate-800\/80,
+.theme-sapphire .bg-slate-800\/60 {
+  background-color: #11224d !important;
+  border-color: #1e3a8a !important;
+}
+
+/* Theme 4: Emerald Palace (Vastu Earth) */
+.theme-emerald {
+  background-color: #021a12 !important;
+}
+
+.theme-emerald .bg-slate-950 {
+  background-color: #021a12 !important;
+}
+
+.theme-emerald .bg-slate-900 {
+  background-color: #062c21 !important;
+  border-color: #0d4d3a !important;
+}
+
+.theme-emerald .bg-slate-800,
+.theme-emerald .bg-slate-800\/80,
+.theme-emerald .bg-slate-800\/60 {
+  background-color: #0a3a2c !important;
+  border-color: #135e47 !important;
+}
+
+/* Smooth Transition for Theme switching */
+div, section, header, footer, button, nav {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
